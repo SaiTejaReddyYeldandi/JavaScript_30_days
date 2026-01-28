@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 2 — Tic Tac Toe</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Tic Tac Toe</h1>
+      <p class="sub">Day 2 — JavaScript 30 Days</p>
+    </header>
+
+    <section class="panel">
+      <div class="status">
+        <span id="turnText">Turn: X</span>
+        <span id="scoreText">Score — X: 0 | O: 0 | Draws: 0</span>
+      </div>
+
+      <div class="board" id="board" aria-label="Tic Tac Toe board">
+        <button class="cell" data-i="0" aria-label="cell 1"></button>
+        <button class="cell" data-i="1" aria-label="cell 2"></button>
+        <button class="cell" data-i="2" aria-label="cell 3"></button>
+        <button class="cell" data-i="3" aria-label="cell 4"></button>
+        <button class="cell" data-i="4" aria-label="cell 5"></button>
+        <button class="cell" data-i="5" aria-label="cell 6"></button>
+        <button class="cell" data-i="6" aria-label="cell 7"></button>
+        <button class="cell" data-i="7" aria-label="cell 8"></button>
+        <button class="cell" data-i="8" aria-label="cell 9"></button>
+      </div>
+
+      <div class="actions">
+        <button id="restartBtn" class="btn">Restart Round</button>
+        <button id="resetScoreBtn" class="btn btn-secondary">Reset Score</button>
+      </div>
+
+      <p class="hint">Tip: You can also use keys 1–9 to play.</p>
+    </section>
+
+    <footer class="footer">
+      <a href="../" class="back">← Back to JS30 Home</a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
